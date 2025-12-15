@@ -67,7 +67,7 @@ $posts = $pdo->query($sql)->fetchAll();
                         👤 <?php echo $post['username']; ?><br>
                         📅 <?php echo date('d,m,Y',strtotime($post['created_at'])); ?>
                     </small>
-                    <a href="#" class="btn btn-outline-primary btn-sm">Читать</a>
+                    <a href="post.php?id=<?php echo $post['id']; ?>" class="btn btn-outline-primary btn-sm">Читать</a>
                 </div>
             </div>
         </div>
